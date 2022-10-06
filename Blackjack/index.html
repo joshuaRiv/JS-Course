@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>BlackJack</title>
+  </head>
+  <body>
+    <header class="titulo">BlackJack</header>
+    <div class="row mt-2">
+      <div class="col text-center">
+        <button id="btn_new" class="btn btn-danger">Nuevo juego</button>
+        <button id="btn_pedir" class="btn btn-primary">Pedir carta</button>
+        <button id="btn_detener" class="btn btn-primary">Detener</button>
+      </div>
+    </div>
+
+    <div class="row row-cols-2">
+      <div class="col">
+        <h1>Jugador 1 - <small>0</small></h1>
+        <div id="jugador-cartas">
+          <!-- <img class="carta" src="assets/cartas/2C.png" alt="carta-jugador1" />
+          <img class="carta" src="assets/cartas/10H.png" alt="carta-jugador1" />
+          <img class="carta" src="assets/cartas/3D.png" alt="carta-jugador1" /> -->
+        </div>
+      </div>
+
+      <div class="col text-end mr-2">
+        <h1>Computadora - <small>0</small></h1>
+        <div id="computadora-cartas">
+          <!-- <img class="carta-pc" src="assets/cartas/2C.png" alt="carta-pc" />
+          <img class="carta-pc" src="assets/cartas/10H.png" alt="carta-pc" />
+          <img class="carta-pc" src="assets/cartas/3D.png" alt="carta-pc" /> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/underscore@stable/underscore-umd-min.js"></script>
+    <script src="assets/js/juego.js"></script>
+  </body>
+</html>
